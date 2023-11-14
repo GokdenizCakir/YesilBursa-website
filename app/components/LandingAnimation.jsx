@@ -9,7 +9,7 @@ const LandingAnimation = () => {
       style={{ backgroundImage: 'url(/landing_bg.webp)' }}
       className='h-screen relative filter bg-cover bg-center bg-no-repeat'
     >
-      <div className='w-full h-full flex text-white text-6xl justify-center items-center absoulte bg-customNavy/60'>
+      <div className='w-full h-full flex text-white text-4xl text-center md:text-6xl justify-center items-center absoulte bg-customNavy/60'>
         <h1 className={font.className}>
           Türkiye'nin en iyi demir çelik distribütörü
         </h1>
