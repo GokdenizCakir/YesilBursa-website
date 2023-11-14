@@ -1,7 +1,10 @@
 'use client';
 
+import { DM_Serif_Display } from 'next/font/google';
 import Link from 'next/link';
 import React from 'react';
+
+const font = DM_Serif_Display({ subsets: ['latin'], weight: '400' });
 
 const Navbar = () => {
   const [menuOpened, setMenuOpened] = React.useState(false);
@@ -24,7 +27,10 @@ const Navbar = () => {
       }  fixed w-screen z-[1000] transition-all duration-500 pl-0 lg:pl-20 lg:py-2 px-4 lg:px-20 text-white`}
     >
       <div className='flex items-center justify-between'>
-        <img src='/ysll.webp' className='h-20' alt='ysll' />
+        <div className='flex items-center md:text-xl lg:text-3xl gap-2'>
+          <img src='/ysll.webp' className='h-20' alt='ysll' />
+          <h2 className={font.className}>YEŞİLBURSA PASLANMAZ</h2>
+        </div>
         <div className='sm:flex justify-between hidden gap-4'>
           <Link href='#'>Hakkımızda</Link>
           <Link href='#'>Ürünler</Link>
