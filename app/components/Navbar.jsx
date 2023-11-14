@@ -5,12 +5,24 @@ import React from 'react';
 
 const Navbar = () => {
   const [menuOpened, setMenuOpened] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
   if (typeof window !== 'undefined') {
     window.addEventListener('scroll', () => setMenuOpened(false));
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    });
   }
 
   return (
-    <nav className='bg-customNavy fixed w-screen z-[1000] px-4 lg:px-20 text-white '>
+    <nav
+      className={`${
+        scrolled ? 'bg-customNavy' : ''
+      }  fixed w-screen z-[1000] transition-all duration-500 pl-0 lg:pl-20 lg:py-2 px-4 lg:px-20 text-white`}
+    >
       <div className='flex items-center justify-between'>
         <img src='/ysll.webp' className='h-20' alt='ysll' />
         <div className='sm:flex justify-between hidden gap-4'>
