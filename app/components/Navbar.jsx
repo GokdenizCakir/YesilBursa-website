@@ -20,27 +20,56 @@ const Navbar = () => {
     });
   }
 
+  const scrollToDiv = (id) => {
+    let navHeight = 80;
+    if (window.innerWidth >= 1024) {
+      navHeight = 96;
+    }
+
+    window.scrollTo({
+      top: document.querySelector(id).offsetTop - navHeight,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <nav
       className={`${
         scrolled ? 'bg-customNavy' : ''
-      }  fixed w-screen z-[1000] transition-all duration-500 pl-0 lg:pl-20 lg:py-2 px-4 lg:px-20 text-white`}
+      } fixed w-screen z-[1000] transition-all duration-500 pl-0 lg:pl-20 lg:py-2 px-4 lg:px-20 text-white select-none`}
     >
       <div className='flex items-center justify-between'>
         <div className='flex items-center md:text-xl lg:text-3xl gap-2'>
           <img src='/ysll.webp' className='h-20' alt='ysll' />
           <h2 className={font.className}>YEŞİLBURSA PASLANMAZ</h2>
         </div>
-        <div className='sm:flex justify-between hidden gap-4'>
-          <Link href='#'>Hakkımızda</Link>
-          <Link href='#'>Ürünler</Link>
-          <Link href='#'>Üretim</Link>
-          <Link href='#'>Özellikler</Link>
-          <Link href='#'>İletişim</Link>
-        </div>
+        <ul className='sm:flex justify-between hidden gap-4'>
+          <li className='cursor-pointer' onClick={() => scrollToDiv('#about')}>
+            Hakkımızda
+          </li>
+          <li
+            className='cursor-pointer'
+            onClick={() => scrollToDiv('#products')}
+          >
+            Ürünler
+          </li>
+          <li className='cursor-pointer'>Üretim</li>
+          <li
+            className='cursor-pointer'
+            onClick={() => scrollToDiv('#features')}
+          >
+            Özellikler
+          </li>
+          <li
+            className='cursor-pointer'
+            onClick={() => scrollToDiv('#contact')}
+          >
+            İletişim
+          </li>
+        </ul>
         <svg
           onClick={() => setMenuOpened(!menuOpened)}
-          className='overflow-visible sm:hidden'
+          className='overflow-visible sm:hidden mr-2'
           width='28'
           height='16'
           viewBox='0 0 28 16'
@@ -79,17 +108,25 @@ const Navbar = () => {
           />
         </svg>
       </div>
-      <div
+      <ul
         className={`${
           menuOpened ? 'h-40' : 'opacity-0 h-0'
         } flex flex-col gap-2 transition-all overflow-hidden sm:hidden items-center`}
       >
-        <Link href='#'>Hakkımızda</Link>
-        <Link href='#'>Ürünler</Link>
-        <Link href='#'>Üretim</Link>
-        <Link href='#'>Özellikler</Link>
-        <Link href='#'>İletişim</Link>
-      </div>
+        <li className='cursor-pointer' onClick={() => scrollToDiv('#about')}>
+          Hakkımızda
+        </li>
+        <li className='cursor-pointer' onClick={() => scrollToDiv('#products')}>
+          Ürünler
+        </li>
+        <li className='cursor-pointer'>Üretim</li>
+        <li className='cursor-pointer' onClick={() => scrollToDiv('#features')}>
+          Özellikler
+        </li>
+        <li className='cursor-pointer' onClick={() => scrollToDiv('#contact')}>
+          İletişim
+        </li>
+      </ul>
     </nav>
   );
 };

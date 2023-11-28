@@ -6,9 +6,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: auto;
+  scrollbar-color: #070b31 #131a4e;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #131a4e;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #070b31;
+  border-radius: 10px;
+  border: 3px none #ffffff;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   overflow-x: hidden;
-  background-color: #4D4D6C;
+  background-color: #4d4d6c;
 }
