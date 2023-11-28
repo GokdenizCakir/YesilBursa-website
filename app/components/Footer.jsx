@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='bg-customNavy text-white relative'>
+    <div className='bg-customNavy text-white relative' id='contact'>
       <div className='flex flex-col gap-10 sm:gap-0 md:flex-row px-6 sm:px-10 lg:px-16 py-10'>
         <div className='text-4xl sm:mb-0 sm:text-2xl mr-6 lg:mr-12'>
           <h2 className='mb-6 font-azonix'>Yeşil Bursa </h2>
@@ -36,7 +36,7 @@ const Footer = () => {
           <img src='/ysll.webp' alt='ysll' />
           <div className='flex justify-between mb-32 sm:mb-0'>
             <div className='flex flex-col justify-end'>
-              <h3 className='text-xs font-light'>C 2023 YSL</h3>
+              <h3 className='text-xs font-light'>&#169; 2023 YSL</h3>
             </div>
             <div className='text-end font-light text-xs'>
               <h2>Terms & Conditions</h2>
