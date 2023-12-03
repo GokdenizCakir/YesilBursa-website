@@ -26,11 +26,11 @@ const Carousel = ({ data }) => {
     });
   };
 
-  React.useEffect(() => {
-    setInterval(() => {
-      nextSlide();
-    }, 7000);
-  }, []);
+//   React.useEffect(() => {
+//     setInterval(() => {
+//       nextSlide();
+//     }, 7000);
+//   }, []);
 
   return (
     <div
