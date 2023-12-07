@@ -39,27 +39,21 @@ const Navbar = () => {
       } fixed w-screen z-[1000] transition-all duration-500 pl-0 lg:pl-20 lg:py-2 px-4 lg:px-20 text-white select-none`}
     >
       <div className='flex items-center justify-between'>
-        <div className='flex items-center md:text-xl lg:text-3xl gap-2'>
+        <Link
+          href='/'
+          className='flex items-center md:text-xl lg:text-3xl gap-2'
+        >
           <img src='/ysll.webp' className='h-20' alt='ysll' />
           <h2 className={font.className}>YEŞİLBURSA PASLANMAZ</h2>
-        </div>
+        </Link>
         <ul className='sm:flex justify-between hidden gap-4'>
           <li className='cursor-pointer' onClick={() => scrollToDiv('#about')}>
             Hakkımızda
           </li>
-          <li
-            className='cursor-pointer'
-            onClick={() => scrollToDiv('#products')}
-          >
-            Ürünler
-          </li>
+          <Link href='/catalog' className='cursor-pointer'>
+            Katalog
+          </Link>
           <li className='cursor-pointer'>Üretim</li>
-          <li
-            className='cursor-pointer'
-            onClick={() => scrollToDiv('#features')}
-          >
-            Özellikler
-          </li>
           <li
             className='cursor-pointer'
             onClick={() => scrollToDiv('#contact')}

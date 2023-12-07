@@ -22,8 +22,6 @@ const LandingAnimation = () => {
           </h1>
         </div>
       </div>
-      <Carousel />
-      <Features />
     </>
   );
 };

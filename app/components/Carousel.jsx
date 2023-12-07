@@ -4,6 +4,7 @@ import React from 'react';
 import slides from '../data/carousel.json';
 
 const Carousel = ({ data }) => {
+  const [filter, setFilter] = React.useState('all');
   const [currentSlide, setCurrentSlide] = React.useState(0);
 
   const nextSlide = () => {
@@ -26,18 +27,45 @@ const Carousel = ({ data }) => {
     });
   };
 
-//   React.useEffect(() => {
-//     setInterval(() => {
-//       nextSlide();
-//     }, 7000);
-//   }, []);
+  //   React.useEffect(() => {
+  //     setInterval(() => {
+  //       nextSlide();
+  //     }, 7000);
+  //   }, []);
 
   return (
     <div
       className='flex justify-center items-center relative h-screen overflow-hidden'
       id='products'
     >
-      <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-customNavy'></div>
+      <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-customNavy'>
+        <div className='flex select-none justify-center items-center gap-4 h-20'>
+          <div
+            onClick={() => setFilter('all')}
+            className={`${
+              filter == 'all' ? 'text-white bg-customNavy' : null
+            } rounded-2xl text-center py-1 px-2 cursor-pointer ring-1 ring-customNavy`}
+          >
+            Hepsi
+          </div>
+          <div
+            onClick={() => setFilter('products')}
+            className={`${
+              filter == 'products' ? 'text-white bg-customNavy' : null
+            } rounded-2xl text-center py-1 px-2 cursor-pointer ring-1 ring-customNavy`}
+          >
+            Ürünler
+          </div>
+          <div
+            onClick={() => setFilter('özellikler')}
+            className={`${
+              filter == 'özellikler' ? 'text-white bg-customNavy' : null
+            } rounded-2xl text-center py-1 px-2 cursor-pointer ring-1 ring-customNavy`}
+          >
+            Özellikler
+          </div>
+        </div>
+      </div>
       <div
         className='flex justify-center items-center absolute left-4 top-0 h-full w-10 z-10 cursor-pointer'
         onClick={prevSlide}
