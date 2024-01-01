@@ -1,10 +1,10 @@
 'use client';
 
-import { DM_Serif_Display } from 'next/font/google';
+import { Didact_Gothic } from 'next/font/google';
 import Link from 'next/link';
 import React from 'react';
 
-const font = DM_Serif_Display({ subsets: ['latin'], weight: '400' });
+const font = Didact_Gothic({ subsets: ['latin'], weight: '400' });
 
 const Navbar = () => {
   const [menuOpened, setMenuOpened] = React.useState(false);
