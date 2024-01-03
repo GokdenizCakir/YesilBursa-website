@@ -44,12 +44,14 @@ const Navbar = () => {
           className='flex items-center md:text-xl lg:text-3xl gap-2'
         >
           <img src='/ysll.webp' className='h-20' alt='ysll' />
-          <h2 className={font.className}>YEŞİLBURSA PASLANMAZ</h2>
+          <h2 className={font.className + " tracking-wider text-2xl"}>YEŞİLBURSA PASLANMAZ</h2>
         </Link>
         <ul className='sm:flex justify-between hidden gap-4'>
-          <li className='cursor-pointer' onClick={() => scrollToDiv('#about')}>
+          {/* <li className='cursor-pointer' onClick={() => scrollToDiv('#about')}> */}
+          <Link href='/catalog' className='cursor-pointer'>
             Hakkımızda
-          </li>
+            </Link>
+          {/* </li> */}
           <Link href='/catalog' className='cursor-pointer'>
             Katalog
           </Link>
@@ -104,8 +106,8 @@ const Navbar = () => {
       </div>
       <ul
         className={`${
-          menuOpened ? 'h-40' : 'opacity-0 h-0'
-        } flex flex-col gap-2 transition-all overflow-hidden sm:hidden items-center`}
+          menuOpened ? 'h-60' : 'opacity-0 h-0'
+        } flex flex-col gap-4 transition-all overflow-hidden sm:hidden items-center bg-customNavy/100 absolute w-full top-32 left-0 text-md`}
       >
         <li className='cursor-pointer' onClick={() => scrollToDiv('#about')}>
           Hakkımızda

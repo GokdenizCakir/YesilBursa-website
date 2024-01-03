@@ -14,12 +14,12 @@ const Footer = () => {
           <div className='flex flex-col'>
             <h2 className='mt-2 mb-8'>Şirketimiz</h2>
             <Link
-              href='/about-us'
+              href='/catalog'
               className='cursor-pointer text-sm mb-1 font-light'
             >
               Biz
             </Link>
-            <Link href='/demo' className='cursor-pointer  text-sm font-light'>
+            <Link href='/contact' className='cursor-pointer  text-sm font-light'>
               İletişim
             </Link>
           </div>
