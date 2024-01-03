@@ -9,7 +9,7 @@ const page = () => {
 	return (
 		<div className='pt-24 px-0 flex justify-center bg-customNavy'>
 			{/* <Carousel /> */}
-			<div className='min-h-screen h-screen w-full md:w-1/2 flex flex-col gap-8 items-center py-8'>
+			<div className=' w-full md:min-w-fit flex flex-col gap-8 items-center py-8'>
 				<div className='flex flex-col items-center justify-center w-full'>
 					<div className='flex flex-row items-center justify-center w-full'>
 						<button
@@ -18,7 +18,7 @@ const page = () => {
 							} text-white font-bold py-2 px-4 rounded-l cursor-pointer`}
 							onClick={() => setFilter('all')}
 						>
-							All
+							Tümü
 						</button>
 						<button
 							className={`${
@@ -41,7 +41,7 @@ const page = () => {
 				</div>
 
 				{filter === 'all' && (
-					<Carousel slide={false}>
+					<Carousel slide={false} className='h-screen'>
 						<Hakkimizda />
 						{Urunler.map((item, i) => {
 							return React.cloneElement(item, { key: 'f' + i });
@@ -49,10 +49,12 @@ const page = () => {
 					</Carousel>
 				)}
 				{filter === 'hakkimizda' && (
-					<Carousel slide={false}>{<Hakkimizda />}</Carousel>
+					<Carousel slide={false} className='h-screen'>
+						{<Hakkimizda />}
+					</Carousel>
 				)}
 				{filter === 'urunler' && (
-					<Carousel slide={false}>
+					<Carousel slide={false} className='h-screen'>
 						{Urunler.map((item, i) => {
 							return React.cloneElement(item, { key: 'f' + i });
 						})}
@@ -99,6 +101,11 @@ const Urunler = [
 	/>,
 	<img
 		src='/katalog/6.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/tablo-1.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
