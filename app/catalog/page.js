@@ -47,7 +47,7 @@ const page = () => {
 				</div>
 
 				{filter === 'all' && (
-					<Carousel slide={false} className='h-screen pb-16'>
+					<Carousel slide={false} className='h-screen pb-16' indicators={false}>
 						<Hakkimizda />
 						{Urunler.map((item, i) => {
 							return React.cloneElement(item, { key: 'f' + i });
@@ -55,12 +55,12 @@ const page = () => {
 					</Carousel>
 				)}
 				{filter === 'hakkimizda' && (
-					<Carousel slide={false} className='h-screen pb-16'>
+					<Carousel slide={false} className='h-screen pb-16' indicators={false}>
 						{<Hakkimizda />}
 					</Carousel>
 				)}
 				{filter === 'urunler' && (
-					<Carousel slide={false} className='h-screen pb-16'>
+					<Carousel slide={false} className='h-screen pb-16' indicators={false}>
 						{Urunler.map((item, i) => {
 							return React.cloneElement(item, { key: 'f' + i });
 						})}
