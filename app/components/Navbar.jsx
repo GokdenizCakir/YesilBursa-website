@@ -35,8 +35,8 @@ const Navbar = () => {
   return (
     <nav
       className={`${
-        scrolled ? 'bg-customWhite text-customPrimary' : 'text-customWhite' && menuOpened ? 'bg-customWhite text-customPrimary' : 'text-customWhite'
-      } fixed w-screen z-[1000] transition-all duration-500 pl-0 lg:pl-20 lg:py-2 px-4 lg:px-20  select-none`}
+        scrolled ? 'bg-customWhite text-customPrimary' : 'text-customWhite ' && menuOpened ? 'bg-customWhite text-customPrimary' : 'text-customWhite'
+      } fixed w-screen z-[1000] transition-all duration-500 pl-0 lg:pl-20 lg:py-2 px-4 lg:px-20  select-none  border-b-[1px] border-white/30`}
     >
       <div className='flex items-center justify-between'>
         <Link

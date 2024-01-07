@@ -81,32 +81,92 @@ const Hakkimizda = () => (
 
 const Urunler = [
 	<img
-		src='/katalog/1.png'
+		src='/katalog/o-ana@2x.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
 	<img
-		src='/katalog/2.png'
+		src='/katalog/o-1@2x.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
 	<img
-		src='/katalog/3.png'
+		src='/katalog/o-2@2x.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
 	<img
-		src='/katalog/4.png'
+		src='/katalog/o-3@2x.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
 	<img
-		src='/katalog/5.png'
+		src='/katalog/o-4@2x.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
 	<img
-		src='/katalog/6.png'
+		src='/katalog/o-5@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/o-6@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/o-7@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/o-8@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/o-9@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/o-10@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/o-11@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/f-ana@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/f-1@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/f-2@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/f-3@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/f-4@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/f-5@2x.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
