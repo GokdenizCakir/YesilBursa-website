@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='bg-customNavy text-white relative' id='contact'>
+    <div className='bg-customWhite text-customPrimary relative' id='contact'>
       <div className='flex flex-col gap-10 sm:gap-0 md:flex-row px-6 sm:px-10 lg:px-16 py-10'>
         <div className='text-4xl sm:mb-0 sm:text-2xl mr-6 lg:mr-12'>
           <h2 className='mb-6 font-azonix'>Yeşil Bursa </h2>
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='border-[0.5px] hidden md:block border-white mx-4 lg:mx-20'></div>
+        <div className='border-[0.5px] hidden md:block border-customPrimary mx-4 lg:mx-20'></div>
 
         <div className='w-full'>
           <img src='/ysll.webp' alt='ysll' />

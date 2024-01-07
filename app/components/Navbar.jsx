@@ -12,7 +12,7 @@ const Navbar = () => {
   if (typeof window !== 'undefined') {
     window.addEventListener('scroll', () => setMenuOpened(false));
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 60) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -35,16 +35,16 @@ const Navbar = () => {
   return (
     <nav
       className={`${
-        scrolled ? 'bg-customNavy' : ''
-      } fixed w-screen z-[1000] transition-all duration-500 pl-0 lg:pl-20 lg:py-2 px-4 lg:px-20 text-white select-none`}
+        scrolled ? 'bg-customWhite text-customPrimary' : 'text-customWhite' && menuOpened ? 'bg-customWhite text-customPrimary' : 'text-customWhite'
+      } fixed w-screen z-[1000] transition-all duration-500 pl-0 lg:pl-20 lg:py-2 px-4 lg:px-20  select-none`}
     >
       <div className='flex items-center justify-between'>
         <Link
           href='/'
-          className='flex items-center md:text-xl lg:text-3xl gap-2'
+          className='flex items-center md:text-xl lg:text-3xl gap-6 p-2 md:p-0'
         >
-          <img src='/ysll.webp' className='h-20' alt='ysll' />
-          <h2 className={font.className + " tracking-wider text-2xl"}>YEŞİLBURSA PASLANMAZ</h2>
+          <img src='/ysll.webp' className='h-14 md:h-20' alt='ysll' />
+          <h2 className={font.className + " tracking-wider text-base  md:text-2xl leading-none"}>YEŞİLBURSA <br className='md:hidden block' /> PASLANMAZ</h2>
         </Link>
         <ul className='sm:flex justify-between hidden gap-4'>
           {/* <li className='cursor-pointer' onClick={() => scrollToDiv('#about')}> */}
@@ -65,7 +65,7 @@ const Navbar = () => {
         </ul>
         <svg
           onClick={() => setMenuOpened(!menuOpened)}
-          className='overflow-visible sm:hidden mr-2'
+          className={`overflow-visible sm:hidden mr-2 ${(menuOpened || scrolled) ? 'stroke-customPrimary' : 'stroke-customWhite'}`}
           width='28'
           height='16'
           viewBox='0 0 28 16'
@@ -79,7 +79,7 @@ const Navbar = () => {
             y1='1'
             x2='28'
             y2='1'
-            stroke='#EADAFF'
+            // stroke='#EADAFF'
             strokeWidth='2'
           />
           <line
@@ -89,7 +89,7 @@ const Navbar = () => {
             y1='8'
             x2='28'
             y2='8'
-            stroke='#EADAFF'
+            // stroke='#EADAFF'
             strokeWidth='2'
           />
           <line
@@ -99,7 +99,7 @@ const Navbar = () => {
             y1='15'
             x2='28'
             y2='15'
-            stroke='#EADAFF'
+            // stroke='#EADAFF'
             strokeWidth='2'
           />
         </svg>
@@ -107,7 +107,7 @@ const Navbar = () => {
       <ul
         className={`${
           menuOpened ? 'h-60' : 'opacity-0 h-0'
-        } flex flex-col gap-4 transition-all overflow-hidden sm:hidden items-center bg-customNavy/100 absolute w-full top-32 left-0 text-md`}
+        } flex flex-col gap-4 transition-all overflow-hidden sm:hidden items-center bg-customWhite/100 text-customPrimary absolute w-full top-32 left-0 text-md`}
       >
         <li className='cursor-pointer' onClick={() => scrollToDiv('#about')}>
           Hakkımızda

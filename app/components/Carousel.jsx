@@ -38,29 +38,29 @@ const Carousel = ({ data }) => {
       className='flex justify-center items-center relative h-screen overflow-hidden'
       id='products'
     >
-      <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-customNavy'>
+      <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-customWhite'>
         <div className='flex select-none justify-center items-center gap-4 h-20'>
           <div
             onClick={() => setFilter('all')}
             className={`${
-              filter == 'all' ? 'text-white bg-customNavy' : null
-            } rounded-2xl text-center py-1 px-2 cursor-pointer ring-1 ring-customNavy`}
+              filter == 'all' ? 'text-customPrimary bg-customWhite' : null
+            } rounded-2xl text-center py-1 px-2 cursor-pointer ring-1 ring-customWhite`}
           >
             Hepsi
           </div>
           <div
             onClick={() => setFilter('products')}
             className={`${
-              filter == 'products' ? 'text-white bg-customNavy' : null
-            } rounded-2xl text-center py-1 px-2 cursor-pointer ring-1 ring-customNavy`}
+              filter == 'products' ? 'text-customPrimary bg-customWhite' : null
+            } rounded-2xl text-center py-1 px-2 cursor-pointer ring-1 ring-customWhite`}
           >
             Ürünler
           </div>
           <div
             onClick={() => setFilter('özellikler')}
             className={`${
-              filter == 'özellikler' ? 'text-white bg-customNavy' : null
-            } rounded-2xl text-center py-1 px-2 cursor-pointer ring-1 ring-customNavy`}
+              filter == 'özellikler' ? 'text-customPrimary bg-customWhite' : null
+            } rounded-2xl text-center py-1 px-2 cursor-pointer ring-1 ring-customWhite`}
           >
             Özellikler
           </div>
@@ -73,7 +73,7 @@ const Carousel = ({ data }) => {
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 -960 960 960'
-          className='w-8 h-8 fill-white hover:fill-gray-300 hover:w-10 hover:h-10 transition-all duration-500 ease-in-out'
+          className='w-8 h-8 fill-customPrimary hover:fill-gray-300 hover:w-10 hover:h-10 transition-all duration-500 ease-in-out'
         >
           <path d='M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z' />
         </svg>
@@ -100,16 +100,16 @@ const Carousel = ({ data }) => {
                   : 'opacity-0'
               }`}
             >
-              <h1 className='inline-block text-customNavy text-3xl md:text-4xl font-bold mb-2 border-b-4 border-customNavy'>
+              <h1 className='inline-block text-customWhite text-3xl md:text-4xl font-bold mb-2 border-b-4 border-customWhite'>
                 {slide.category}{' '}
-                <span className='text-white'>{slide.model}</span>
+                <span className='text-customPrimary'>{slide.model}</span>
               </h1>
               <div className='flex flex-col md:flex-row gap-8'>
                 <div className='flex-1'>
                   <h1 className='text-gray-200 text-xl md:text-2xl font-semibold'>
                     Özellikler
                   </h1>
-                  <p className='text-white text-base md:text-lg font-medium'>
+                  <p className='text-customPrimary text-base md:text-lg font-medium'>
                     {slide.features}
                   </p>
                 </div>
@@ -117,7 +117,7 @@ const Carousel = ({ data }) => {
                   <h1 className='text-gray-200 text-xl md:text-2xl font-semibold'>
                     Kullanım Alanları
                   </h1>
-                  <p className='text-white text-base md:text-lg font-medium'>
+                  <p className='text-customPrimary text-base md:text-lg font-medium'>
                     {slide.areas}
                   </p>
                 </div>
@@ -133,7 +133,7 @@ const Carousel = ({ data }) => {
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 -960 960 960'
-          className='w-8 h-8 fill-white hover:fill-gray-300 hover:w-10 hover:h-10 transition-all duration-500 ease-in-out'
+          className='w-8 h-8 fill-customPrimary hover:fill-gray-300 hover:w-10 hover:h-10 transition-all duration-500 ease-in-out'
         >
           <path d='m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z' />
         </svg>
@@ -146,7 +146,7 @@ const Carousel = ({ data }) => {
                 key={index}
                 onClick={() => setCurrentSlide(index)}
                 className={`w-2 h-2 rounded-full ${
-                  currentSlide === index ? 'bg-white' : 'bg-gray-400'
+                  currentSlide === index ? 'bg-customPrimary' : 'bg-gray-400'
                 } mx-1 cursor-pointer transition-all duration-500 ease-in-out`}
               ></div>
             );

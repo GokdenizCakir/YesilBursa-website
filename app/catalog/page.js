@@ -4,34 +4,40 @@ import React from 'react';
 // import Carousel from '../components/Carousel';
 
 const page = () => {
-	const [filter, setFilter] = React.useState('all');
+	const [filter, setFilter] = React.useState('urunler');
 
 	return (
-		<div className='pt-24 px-0 flex justify-center bg-customNavy'>
+		<div className='px-0 flex justify-center  bg-cover bg-center bg-no-repeat bg-[url(/landing_bg.webp)]'>
 			{/* <Carousel /> */}
-			<div className=' w-full md:min-w-fit flex flex-col gap-8 items-center py-8'>
-				<div className='flex flex-col items-center justify-center w-full'>
+			<div className='w-full md:min-w-fit flex flex-col gap-8 md:gap-16 items-center py-8 bg-customNavy/70 backdrop-blur-sm '>
+				<div className='flex flex-col items-center justify-center w-full pt-24'>
 					<div className='flex flex-row items-center justify-center w-full'>
 						<button
 							className={`${
-								filter === 'all' ? 'bg-customGray' : 'bg-customNavy'
-							} text-white font-bold py-2 px-4 rounded-l cursor-pointer`}
+								filter !== 'all'
+									? 'bg-customWhite opacity-60 text-customPrimary/80'
+									: 'bg-customWhite text-customPrimary/100'
+							} text-customPrimary/60 font-bold py-2 px-4 rounded-l cursor-pointer`}
 							onClick={() => setFilter('all')}
 						>
 							Tümü
 						</button>
 						<button
 							className={`${
-								filter === 'hakkimizda' ? 'bg-customGray' : 'bg-customNavy'
-							} text-white font-bold py-2 px-4 cursor-pointer`}
+								filter !== 'hakkimizda'
+									? 'bg-customWhite opacity-60 text-customPrimary/80'
+									: 'bg-customWhite text-customPrimary/100'
+							} text-customPrimary/60 font-bold py-2 px-4 cursor-pointer`}
 							onClick={() => setFilter('hakkimizda')}
 						>
 							Hakkımızda
 						</button>
 						<button
 							className={`${
-								filter === 'urunler' ? 'bg-customGray' : 'bg-customNavy'
-							} text-white font-bold py-2 px-4 rounded-r cursor-pointer`}
+								filter !== 'urunler'
+									? 'bg-customWhite opacity-60 text-customPrimary/80'
+									: 'bg-customWhite text-customPrimary/100'
+							}  font-bold py-2 px-4 rounded-r cursor-pointer`}
 							onClick={() => setFilter('urunler')}
 						>
 							Ürünler
@@ -41,7 +47,7 @@ const page = () => {
 				</div>
 
 				{filter === 'all' && (
-					<Carousel slide={false} className='h-screen'>
+					<Carousel slide={false} className='h-screen pb-16'>
 						<Hakkimizda />
 						{Urunler.map((item, i) => {
 							return React.cloneElement(item, { key: 'f' + i });
@@ -49,12 +55,12 @@ const page = () => {
 					</Carousel>
 				)}
 				{filter === 'hakkimizda' && (
-					<Carousel slide={false} className='h-screen'>
+					<Carousel slide={false} className='h-screen pb-16'>
 						{<Hakkimizda />}
 					</Carousel>
 				)}
 				{filter === 'urunler' && (
-					<Carousel slide={false} className='h-screen'>
+					<Carousel slide={false} className='h-screen pb-16'>
 						{Urunler.map((item, i) => {
 							return React.cloneElement(item, { key: 'f' + i });
 						})}
@@ -106,6 +112,26 @@ const Urunler = [
 	/>,
 	<img
 		src='/katalog/tablo-1.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/Östenitik@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/Paslanmaz Lama@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/Round Bar@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
+	<img
+		src='/katalog/Angle Bar@2x.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,

@@ -6,7 +6,7 @@ const Features = () => {
   return (
     <>
       <div className='relative overflow-x-auto' id='features'>
-        <table className='bg-customNavy/80 w-full text-sm text-left rtl:text-right text-zinc-300 features'>
+        <table className='bg-customWhite/80 w-full text-sm text-left rtl:text-right text-zinc-300 features'>
           <thead className='text-zinc-100 text-sm uppercase'>
             <tr>
               <th className='px-6 py-3' colSpan='2' scope='col'>
@@ -18,7 +18,7 @@ const Features = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <th
                 className='border border-gray-700'
                 colSpan='2'
@@ -32,7 +32,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>439 M</td>
               <td className='px-2 py-3 border border-gray-700'>441 LI</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>"1.4016"</td>
               <td className='px-2 py-3 border border-gray-700'>"1.4512"</td>
               <td className='px-2 py-3 border border-gray-700'>"1.4512"</td>
@@ -40,9 +40,9 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>"1.4510"</td>
               <td className='px-2 py-3 border border-gray-700'>"1.4509"</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <th
-                className='px-3 py-2 md:px-6 md:py-4 font-medium whitespace-nowrap text-white border border-gray-700'
+                className='px-3 py-2 md:px-6 md:py-4 font-medium customPrimaryspace-nowrap text-customPrimary border border-gray-700'
                 rowSpan='5'
                 scope='row'
               >
@@ -56,7 +56,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>0,02</td>
               <td className='px-2 py-3 border border-gray-700'>0,02</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>Cr</td>
               <td className='px-2 py-3 border border-gray-700'>16,2</td>
               <td className='px-2 py-3 border border-gray-700'>11,5</td>
@@ -65,7 +65,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>17,7</td>
               <td className='px-2 py-3 border border-gray-700'>18,2</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>Ni</td>
               <td className='px-2 py-3 border border-gray-700'>-</td>
               <td className='px-2 py-3 border border-gray-700'>-</td>
@@ -74,7 +74,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>-</td>
               <td className='px-2 py-3 border border-gray-700'>-</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>Mo</td>
               <td className='px-2 py-3 border border-gray-700'>-</td>
               <td className='px-2 py-3 border border-gray-700'>-</td>
@@ -83,7 +83,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>-</td>
               <td className='px-2 py-3 border border-gray-700'>-</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>Diğer</td>
               <td className='px-2 py-3 border border-gray-700'>-</td>
               <td className='px-2 py-3 border border-gray-700'>Ti</td>
@@ -92,9 +92,9 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>Ti, Nb</td>
               <td className='px-2 py-3 border border-gray-700'>Ti, Nb</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <th
-                className='px-3 py-2 md:px-6 md:py-4 font-medium whitespace-nowrap text-white border border-gray-700'
+                className='px-3 py-2 md:px-6 md:py-4 font-medium customPrimaryspace-nowrap text-customPrimary border border-gray-700'
                 rowSpan='5'
                 scope='row'
               >
@@ -110,7 +110,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>280</td>
               <td className='px-2 py-3 border border-gray-700'>300</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>
                 Kopma Yükü Rm
               </td>
@@ -121,7 +121,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>450</td>
               <td className='px-2 py-3 border border-gray-700'>470</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>
                 Uzama A% A80 (Kalınlık 3mm) A5 (Kalınlık ≥3mm)
               </td>
@@ -136,7 +136,7 @@ const Features = () => {
         </table>
       </div>
       <div className='relative overflow-x-auto'>
-        <table className='bg-customNavy/80 w-full text-sm text-left rtl:text-right text-zinc-300 features'>
+        <table className='bg-customWhite/80 w-full text-sm text-left rtl:text-right text-zinc-300 features'>
           <thead className='text-zinc-100 text-sm uppercase'>
             <tr>
               <th className='px-6 py-3' colSpan='2' scope='col'>
@@ -149,7 +149,7 @@ const Features = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <th
                 className='border border-gray-700'
                 colSpan='2'
@@ -171,7 +171,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>309 S </td>
               <td className='px-2 py-3 border border-gray-700'>310 S</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>"1.4310" </td>
               <td className='px-2 py-3 border border-gray-700'>"1.4301" </td>
               <td className='px-2 py-3 border border-gray-700'>"1.4306" </td>
@@ -186,9 +186,9 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>"1.4833" </td>
               <td className='px-2 py-3 border border-gray-700'>"1.4845"</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <th
-                className='px-3 py-2 md:px-6 md:py-4 font-medium whitespace-nowrap text-white border border-gray-700'
+                className='px-3 py-2 md:px-6 md:py-4 font-medium customPrimaryspace-nowrap text-customPrimary border border-gray-700'
                 rowSpan='5'
                 scope='row'
               >
@@ -209,7 +209,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>0,06 </td>
               <td className='px-2 py-3 border border-gray-700'>0,05</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>Cr </td>
               <td className='px-2 py-3 border border-gray-700'>17,4 </td>
               <td className='px-2 py-3 border border-gray-700'>18,2 </td>
@@ -225,7 +225,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>22,6 </td>
               <td className='px-2 py-3 border border-gray-700'>24,3</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>Ni</td>
               <td className='px-2 py-3 border border-gray-700'> 7,6</td>
               <td className='px-2 py-3 border border-gray-700'> 8,1</td>
@@ -241,7 +241,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'> 13,1</td>
               <td className='px-2 py-3 border border-gray-700'> 19,1</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>Mo </td>
               <td className='px-2 py-3 border border-gray-700'>– </td>
               <td className='px-2 py-3 border border-gray-700'>– </td>
@@ -257,7 +257,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>– </td>
               <td className='px-2 py-3 border border-gray-700'>–</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>Diğer </td>
               <td className='px-2 py-3 border border-gray-700'>– </td>
               <td className='px-2 py-3 border border-gray-700'>– </td>
@@ -273,9 +273,9 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>Ti </td>
               <td className='px-2 py-3 border border-gray-700'>Si</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <th
-                className='px-3 py-2 md:px-6 md:py-4 font-medium whitespace-nowrap text-white border border-gray-700 border-b-white'
+                className='px-3 py-2 md:px-6 md:py-4 font-medium customPrimaryspace-nowrap text-customPrimary border border-gray-700 border-b-customPrimary'
                 rowSpan='5'
                 scope='row'
               >
@@ -298,7 +298,7 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>300 </td>
               <td className='px-2 py-3 border border-gray-700'>260</td>
             </tr>
-            <tr className='bg-customNavy/90'>
+            <tr className='bg-customWhite/90'>
               <td className='px-2 py-3 border border-gray-700'>
                 Kopma Yükü Rm{' '}
               </td>
@@ -316,47 +316,47 @@ const Features = () => {
               <td className='px-2 py-3 border border-gray-700'>600 </td>
               <td className='px-2 py-3 border border-gray-700'>580</td>
             </tr>
-            <tr className='bg-customNavy/90'>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+            <tr className='bg-customWhite/90'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 Uzama A% A80 (Kalınlık 3mm) A5 (Kalınlık ≥3mm){' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 50{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 54{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 55{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 54{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 56{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 58{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 60{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 57{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 50{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 52{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 55{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 45{' '}
               </td>
-              <td className='px-2 py-3 border border-gray-700 border-b-white'>
+              <td className='px-2 py-3 border border-gray-700 border-b-customPrimary'>
                 45
               </td>
             </tr>
