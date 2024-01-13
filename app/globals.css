@@ -6,16 +6,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scrollbar-width: auto;
+  /* scrollbar-width: auto; */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+/* 
   /* scrollbar-color: #070b31 #131a4e; */
 }
-/* 
-*::-webkit-scrollbar {
+
+::-webkit-scrollbar {
+      display: none;
+    }
+
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+
+     
+/* *::-webkit-scrollbar {
   width: 10px;
   height: 6px;
-}
+} */
 
-*::-webkit-scrollbar-track {
+/* *::-webkit-scrollbar-track {
   background: #131a4e;
 }
 
@@ -23,11 +34,11 @@
   background-color: #070b31;
   border-radius: 10px;
   border: 3px none #ffffff;
-} */
+} */ */
 
 html {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
+  /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; */
 }
 
 body {
