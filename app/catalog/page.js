@@ -19,7 +19,7 @@ const page = () => {
 		<div className='px-0 flex justify-center  bg-cover bg-center bg-no-repeat bg-[url(/landing_bg.webp)]'>
 			{/* <Carousel /> */}
 			<div className='w-full md:min-w-fit flex flex-col gap-8 md:gap-16 items-center py-8 bg-customNavy/70 backdrop-blur-sm '>
-				<div className='flex flex-row items-center justify-start md:justify-center px-12 w-11/12  overflow-x-scroll overflow-y-visible pt-24 *:h-16 md:*:h-auto md:gap-0 gap-1 '>
+				<div className='flex flex-row items-center justify-start md:justify-center px-12 w-11/12  overflow-x-scroll overflow-y-visible pt-24 *:h-12 md:*:h-auto md:gap-0 gap-1 '>
 					{/* <button
 							className={`${
 								filter !== 'all'
@@ -35,27 +35,27 @@ const page = () => {
 							filter !== 'ostenitik'
 								? 'bg-customWhite opacity-60 text-customPrimary/80'
 								: 'bg-customWhite text-customPrimary/100'
-						}  font-bold py-2 px-4 rounded-l cursor-pointer`}
+						}  font-bold py-2 px-4 rounded-l cursor-pointer text-xs md:text-base`}
 						onClick={() => setFilter('ostenitik')}
 					>
-						Östenitik
+						300 Serisi
 					</button>
 					<button
 						className={`${
 							filter !== 'ferritik'
 								? 'bg-customWhite opacity-60 text-customPrimary/80'
 								: 'bg-customWhite text-customPrimary/100'
-						}  font-bold py-2 px-4  cursor-pointer`}
+						}  font-bold py-2 px-4  cursor-pointer text-xs md:text-base`}
 						onClick={() => setFilter('ferritik')}
 					>
-						Ferritik
+						400 Serisi
 					</button>
 					<button
 						className={`${
 							filter !== 'angle-bar'
 								? 'bg-customWhite opacity-60 text-customPrimary/80'
 								: 'bg-customWhite text-customPrimary/100'
-						}  font-bold py-2 px-4  cursor-pointer`}
+						}  font-bold py-2 px-4  cursor-pointer text-xs md:text-base`}
 						onClick={() => setFilter('angle-bar')}
 					>
 						Angle Bar
@@ -65,7 +65,7 @@ const page = () => {
 							filter !== 'paslanmaz-lama'
 								? 'bg-customWhite opacity-60 text-customPrimary/80'
 								: 'bg-customWhite text-customPrimary/100'
-						}  font-bold py-2 px-4  cursor-pointer`}
+						}  font-bold py-2 px-4  cursor-pointer text-xs md:text-base`}
 						onClick={() => setFilter('paslanmaz-lama')}
 					>
 						Paslanmaz Lama
@@ -75,7 +75,7 @@ const page = () => {
 							filter !== 'round-bar'
 								? 'bg-customWhite opacity-60 text-customPrimary/80'
 								: 'bg-customWhite text-customPrimary/100'
-						}  font-bold py-2 px-4  cursor-pointer`}
+						}  font-bold py-2 px-4  cursor-pointer text-xs md:text-base`}
 						onClick={() => setFilter('round-bar')}
 					>
 						Round Bar
@@ -85,7 +85,7 @@ const page = () => {
 							filter !== 'hakkimizda'
 								? 'bg-customWhite opacity-60 text-customPrimary/80'
 								: 'bg-customWhite text-customPrimary/100'
-						} text-customPrimary/60 font-bold rounded-r py-2 px-4 cursor-pointer`}
+						} text-customPrimary/60 font-bold rounded-r py-2 px-4 cursor-pointer text-xs md:text-base`}
 						onClick={() => setFilter('hakkimizda')}
 					>
 						Hakkımızda
