@@ -52,23 +52,23 @@ const page = () => {
 					</button>
 					<button
 						className={`${
-							filter !== 'angle-bar'
+							filter !== 'paslanmaz-profil'
 								? 'bg-customWhite opacity-60 text-customPrimary/80'
 								: 'bg-customWhite text-customPrimary/100'
 						}  font-bold py-2 px-4  cursor-pointer text-xs md:text-base`}
-						onClick={() => setFilter('angle-bar')}
+						onClick={() => setFilter('paslanmaz-profil')}
 					>
-						Angle Bar
+						Paslanmaz Profil
 					</button>
 					<button
 						className={`${
-							filter !== 'paslanmaz-lama'
+							filter !== 'paslanmaz-boru'
 								? 'bg-customWhite opacity-60 text-customPrimary/80'
 								: 'bg-customWhite text-customPrimary/100'
 						}  font-bold py-2 px-4  cursor-pointer text-xs md:text-base`}
-						onClick={() => setFilter('paslanmaz-lama')}
+						onClick={() => setFilter('paslanmaz-boru')}
 					>
-						Paslanmaz Lama
+						Paslanmaz Boru
 					</button>
 					<button
 						className={`${
@@ -78,7 +78,7 @@ const page = () => {
 						}  font-bold py-2 px-4  cursor-pointer text-xs md:text-base`}
 						onClick={() => setFilter('round-bar')}
 					>
-						Round Bar
+						Paslanmaz Çubuk
 					</button>
 					<button
 						className={`${
@@ -120,24 +120,24 @@ const page = () => {
 						})}
 					</Carousel>
 				)}
-				{filter === 'angle-bar' && (
+				{filter === 'paslanmaz-boru' && (
 					<Carousel slide={false} className='h-screen pb-16' indicators={false}>
-						{AngleBar.map((item, i) => {
-							return React.cloneElement(item, { key: 'f' + i });
+						{PaslanmazBoru.map((item, i) => {
+							return React.cloneElement(item, { key: 'ab' + i });
 						})}
 					</Carousel>
 				)}
 				{filter === 'round-bar' && (
 					<Carousel slide={false} className='h-screen pb-16' indicators={false}>
 						{RoundBar.map((item, i) => {
-							return React.cloneElement(item, { key: 'f' + i });
+							return React.cloneElement(item, { key: 'rb' + i });
 						})}
 					</Carousel>
 				)}
-				{filter === 'paslanmaz-lama' && (
+				{filter === 'paslanmaz-profil' && (
 					<Carousel slide={false} className='h-screen pb-16' indicators={false}>
-						{PaslanmazLama.map((item, i) => {
-							return React.cloneElement(item, { key: 'f' + i });
+						{PaslanmazProfil.map((item, i) => {
+							return React.cloneElement(item, { key: 'pl' + i });
 						})}
 					</Carousel>
 				)}
@@ -157,11 +157,6 @@ const Hakkimizda = () => (
 const Ostenitik = [
 	<img
 		src='/katalog/o-ana@2x.png'
-		alt='...'
-		className='w-full h-full select-none object-contain'
-	/>,
-	<img
-		src='/katalog/Östenitik@2x.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
@@ -221,6 +216,11 @@ const Ostenitik = [
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
+	<img
+		src='/katalog/Östenitik@2x.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
 ];
 
 const Ferritik = [
@@ -229,11 +229,7 @@ const Ferritik = [
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
-	<img
-		src='/katalog/tablo-1.png'
-		alt='...'
-		className='w-full h-full select-none object-contain'
-	/>,
+
 	<img
 		src='/katalog/f-1@2x.png'
 		alt='...'
@@ -259,11 +255,16 @@ const Ferritik = [
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
+	<img
+		src='/katalog/tablo-1.png'
+		alt='...'
+		className='w-full h-full select-none object-contain'
+	/>,
 ];
 
-const AngleBar = [
+const PaslanmazBoru = [
 	<img
-		src='/katalog/Angle Bar@2x.png'
+		src='/katalog/paslanmaz-boru@2x.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
@@ -277,9 +278,9 @@ const RoundBar = [
 	/>,
 ];
 
-const PaslanmazLama = [
+const PaslanmazProfil = [
 	<img
-		src='/katalog/Paslanmaz Lama@2x.png'
+		src='/katalog/paslanmaz-profil@2x.png'
 		alt='...'
 		className='w-full h-full select-none object-contain'
 	/>,
